@@ -22,16 +22,16 @@ let newArray = [""];
 let inputString = "";
 let reverString = "";
 
-const reverseString = function(inputString) {
-   let splitString = inputString.split("");
-   let splitStringLength = inputString.length();
+let reverseString = function(inputString) {
+   let splitString = Array.from(inputString);
+   let splitStringLength = splitString.length;
 
    for (let i = 0; i < splitStringLength; i++) {
    let lastElement = splitString.pop(-1);
    newArray.push(lastElement); 
   }
   reverseString = newArray.join("");
-  return reverString;
+  return reverseString;
 };
 
 // Do not edit below this line
