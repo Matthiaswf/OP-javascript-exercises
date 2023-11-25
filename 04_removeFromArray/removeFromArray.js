@@ -1,23 +1,16 @@
 let removeFromArray = function(arrayInput, elementInput, elementInputTwo) {
     if (elementInput != undefined) {
         let index = arrayInput.indexOf(elementInput);
-            if (index === -1) {
-
-            }
-            else {
-                arrayInput.splice(index, 1);
-            }
+        if (index != -1) {
+            arrayInput.splice(index, 1);
+        }
     }
     console.log('finaleValue', arrayInput);
     if (elementInputTwo != undefined) {
         let index2 = arrayInput.indexOf(elementInputTwo);
-            if ( index2 === -1){
-
-            }
-            else {
-                arrayInput.splice(index2, 1);
-                console.log(index2);
-            }
+        if (index2 != -1) {
+            arrayInput.splice(index2, 1)   
+        }       
     }
     console.log('finaleValue', arrayInput);
     return arrayInput;
