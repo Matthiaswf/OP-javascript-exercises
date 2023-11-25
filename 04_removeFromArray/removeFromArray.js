@@ -1,5 +1,6 @@
 let removeFromArray = function(arrayInput, elementInput) {
-    return arrayInput.splice(elementInput);
+    let index = arrayInput.indexOf(elementInput);
+    return arrayInput.splice(index, 1)
 };
 
 // Do not edit below this line
