@@ -1,6 +1,6 @@
 let resultArray = [];
 const sumAll = function(firstInteger, secondInteger) {
-    for (let index = 0; index < secondInteger; index++)
+    for (let index = firstInteger; index < secondInteger; index++)
          {
 
         console.log(index);
@@ -8,8 +8,6 @@ const sumAll = function(firstInteger, secondInteger) {
         console.log(resultArray);
 
     }
-
-    console.log(resultArray);
     return resultArray;
 };
 sumAll(1, 4)
