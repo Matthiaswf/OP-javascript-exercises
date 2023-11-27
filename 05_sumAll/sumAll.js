@@ -1,6 +1,6 @@
-let resultArray = [];
-
 const sumAll = function(firstInteger, secondInteger) {
+    const resultArray = [];
+
     for (let index = firstInteger; index <= secondInteger; index++) {
         resultArray.push(index);
     }
