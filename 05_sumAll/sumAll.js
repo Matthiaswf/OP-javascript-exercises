@@ -5,10 +5,10 @@ const sumAll = function(firstInteger, secondInteger) {
         resultArray.push(index);
     }
 
-    // const test = resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
-    // console.log(test);
+    const sum = resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
+    // console.log(sum);
 
-    return resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
+    return sum;
 };
 
 // sumAll(1, 4000);
