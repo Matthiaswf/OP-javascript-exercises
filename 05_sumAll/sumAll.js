@@ -1,7 +1,7 @@
 let resultArray = [];
 
 const sumAll = function(firstInteger, secondInteger) {
-    for (let index = firstInteger; index < secondInteger || index === secondInteger; index++) {
+    for (let index = firstInteger; index <= secondInteger; index++) {
         resultArray.push(index);
     }
 
@@ -9,8 +9,11 @@ const sumAll = function(firstInteger, secondInteger) {
         return accumulator + currentValue
     },0);
 
+    console.log(sum);
     return sum;
 };
+
+(sumAll(1, 4000))
 
 // Do not edit below this line
 module.exports = sumAll;
