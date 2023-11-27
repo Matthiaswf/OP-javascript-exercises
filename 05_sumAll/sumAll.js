@@ -1,19 +1,11 @@
-let resultArray = [];
-
 const sumAll = function(firstInteger, secondInteger) {
+    const resultArray= [];
     for (let index = firstInteger; index <= secondInteger; index++) {
         resultArray.push(index);
     }
 
-    let sum = resultArray.reduce((accumulator, currentValue) => {
-        return accumulator + currentValue
-    },0);
-
-    console.log(sum);
-    return sum;
+   return resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
 };
-
-(sumAll(1, 4000))
 
 // Do not edit below this line
 module.exports = sumAll;
