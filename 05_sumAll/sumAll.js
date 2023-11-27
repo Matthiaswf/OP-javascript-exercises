@@ -6,10 +6,13 @@ const sumAll = function(firstInteger, secondInteger) {
         console.log(index);
         resultArray.push(index);
         console.log(resultArray);
-
     }
-    return resultArray;
+
+    let sum = resultArray.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue
+      },0);
+      console.log(sum)
+      return sum;
 };
-sumAll(1, 4)
 // Do not edit below this line
 module.exports = sumAll;
