@@ -13,7 +13,7 @@ const sumAll = function(firstInteger, secondInteger) {
     return sum;
 };
 
-(sumAll(1, 4000))
+sumAll(1, 4000);
 
 // Do not edit below this line
 module.exports = sumAll;
