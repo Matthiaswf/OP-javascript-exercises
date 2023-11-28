@@ -1,14 +1,28 @@
 const sumAll = function(firstInteger, secondInteger) {
     const resultArray = [];
 
-    for (let index = firstInteger; index <= secondInteger; index++) {
-        resultArray.push(index);
+    if (firstInteger < secondInteger) {
+        for (let index = firstInteger; index <= secondInteger; index++) {
+            resultArray.push(index);
+        }
+    
+        const sum = resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
+        // console.log(sum);
+    
+        return sum;
     }
 
-    const sum = resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
-    // console.log(sum);
+    else if (firstInteger > secondInteger) {
+        for (let index = secondInteger; index <= firstInteger; index++) {
+            resultArray.push(index);
+        }
+    
+        const sum = resultArray.reduce((accumulator, currentValue) => accumulator + currentValue);
+        // console.log(sum);
+    
+        return sum;
+    }
 
-    return sum;
 };
 
 // sumAll(1, 4000);
