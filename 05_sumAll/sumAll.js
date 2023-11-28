@@ -1,6 +1,10 @@
 const sumAll = function(firstInteger, secondInteger) {
     const resultArray = [];
 
+    if (firstInteger < 0 || secondInteger < 0 ) {
+        return 'ERROR';
+    }
+
     if (firstInteger < secondInteger) {
         for (let index = firstInteger; index <= secondInteger; index++) {
             resultArray.push(index);
