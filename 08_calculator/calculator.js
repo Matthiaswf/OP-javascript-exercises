@@ -23,12 +23,14 @@ const multiply = function(array) {
     for (let i=0; i<array.length; i++) {
         sum = sum * array[i];
     }
-     
+
     return sum;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  let sum = Math.pow(a, b);
+
+	return sum;
 };
 
 const factorial = function() {
