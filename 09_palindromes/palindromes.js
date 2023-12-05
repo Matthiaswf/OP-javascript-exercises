@@ -14,7 +14,7 @@ let reversedString = string
 .replace(/\s+/g, "")
 .toLowerCase();
 
-    if (compactedString === reversedString){
+    if (compactedString === reversedString) {
 
         return  true;
     }
